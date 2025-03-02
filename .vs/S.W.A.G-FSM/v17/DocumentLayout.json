@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GameDev 2023.1\\C\u002B\u002B\\FSM\\S.W.A.G-FSM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69A594D6-68D8-4B7F-94F0-35D669A0B9D2}|S.W.A.G-FSM\\S.W.A.G-FSM.vcxproj|D:\\GameDev 2023.1\\C\u002B\u002B\\FSM\\S.W.A.G-FSM\\S.W.A.G-FSM\\S.W.A.G\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{69A594D6-68D8-4B7F-94F0-35D669A0B9D2}|S.W.A.G-FSM\\S.W.A.G-FSM.vcxproj|solutionrelative:S.W.A.G-FSM\\S.W.A.G\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\GameDev 2023.1\\C\u002B\u002B\\FSM\\S.W.A.G-FSM\\S.W.A.G-FSM\\S.W.A.G\\main.cpp",
+              "RelativeDocumentMoniker": "S.W.A.G-FSM\\S.W.A.G\\main.cpp",
+              "ToolTip": "D:\\GameDev 2023.1\\C\u002B\u002B\\FSM\\S.W.A.G-FSM\\S.W.A.G-FSM\\S.W.A.G\\main.cpp",
+              "RelativeToolTip": "S.W.A.G-FSM\\S.W.A.G\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-02T17:11:41.706Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

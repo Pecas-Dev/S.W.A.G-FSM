@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{69a594d6-68d8-4b7f-94f0-35d669a0b9d2}</ProjectGuid>
+    <RootNamespace>SWAGFSM</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>S.W.A.G\include;S.W.A.G\source;S.W.A.G\include\vendor\imGUI;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>S.W.A.G\include;S.W.A.G\source;S.W.A.G\include\vendor\imGUI;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>S.W.A.G\include;S.W.A.G\source;S.W.A.G\include\vendor\imGUI;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>S.W.A.G\include;S.W.A.G\source;S.W.A.G\include\vendor\imGUI;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\raylib\lib;$(SolutionDir)Dependencies\raylib\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;raylibdll.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\raylib\lib;$(SolutionDir)Dependencies\raylib\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;raylibdll.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\raylib\lib;$(SolutionDir)Dependencies\raylib\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;raylibdll.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\raylib\lib;$(SolutionDir)Dependencies\raylib\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;raylibdll.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="S.W.A.G\main.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Entity.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Grass\BaseState\GrassBaseState.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Grass\GrassStateMachine.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Grass\States\GrassStates.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Sheep\BaseState\SheepBaseState.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Sheep\SheepStateMachine.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Sheep\States\SheepStates.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Wolf\BaseState\WolfBaseState.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Wolf\States\WolfStates.cpp" />
+    <ClCompile Include="S.W.A.G\source\Entities\Wolf\WolfStateMachine.cpp" />
+    <ClCompile Include="S.W.A.G\source\Simulation\Simulation.cpp" />
+    <ClCompile Include="S.W.A.G\source\Utility\RuntimeConfig.cpp" />
+    <ClCompile Include="S.W.A.G\source\Utility\StateMachine.cpp" />
+    <ClCompile Include="S.W.A.G\source\Utility\WindowUtils.cpp" />
+    <ClCompile Include="S.W.A.G\source\vendor\ImGUI\imgui.cpp" />
+    <ClCompile Include="S.W.A.G\source\vendor\ImGUI\imgui_demo.cpp" />
+    <ClCompile Include="S.W.A.G\source\vendor\ImGUI\imgui_draw.cpp" />
+    <ClCompile Include="S.W.A.G\source\vendor\ImGUI\imgui_tables.cpp" />
+    <ClCompile Include="S.W.A.G\source\vendor\ImGUI\imgui_widgets.cpp" />
+    <ClCompile Include="S.W.A.G\source\vendor\ImGUI\rlImGui.cpp" />
+    <ClCompile Include="S.W.A.G\source\World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="S.W.A.G\include\Entities\Entity.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Grass\BaseState\GrassBaseState.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Grass\GrassStateMachine.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Grass\States\GrassStates.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Sheep\BaseState\SheepBaseState.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Sheep\SheepStateMachine.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Sheep\States\SheepStates.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Wolf\BaseState\WolfBaseState.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Wolf\States\WolfStates.h" />
+    <ClInclude Include="S.W.A.G\include\Entities\Wolf\WolfStateMachine.h" />
+    <ClInclude Include="S.W.A.G\include\Simulation\Simulation.h" />
+    <ClInclude Include="S.W.A.G\include\Utility\CoordinateUtils.h" />
+    <ClInclude Include="S.W.A.G\include\Utility\SimulationConfig.h" />
+    <ClInclude Include="S.W.A.G\include\Utility\State.h" />
+    <ClInclude Include="S.W.A.G\include\Utility\StateMachine.h" />
+    <ClInclude Include="S.W.A.G\include\Utility\TestingConfig.h" />
+    <ClInclude Include="S.W.A.G\include\Utility\ValueConfig.h" />
+    <ClInclude Include="S.W.A.G\include\Utility\WindowUtils.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\FA6FreeSolidFontData.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\IconsFontAwesome6.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\imconfig.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\imgui.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\imgui_impl_raylib.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\imgui_internal.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\imstb_rectpack.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\imstb_textedit.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\imstb_truetype.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\rlImGui.h" />
+    <ClInclude Include="S.W.A.G\include\vendor\imGUI\rlImGuiColors.h" />
+    <ClInclude Include="S.W.A.G\include\World\World.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,3 +1,42 @@
+# Made by Juan F. Gutierrez
+
+# Binaries
+bin/
+
+# Visual Studio
+/.vs
+.vs/
+
+*.vs
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
 # Prerequisites
 *.d
 
@@ -14,7 +53,6 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -24,9 +62,7 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
-*.exe
 *.out
 *.app
